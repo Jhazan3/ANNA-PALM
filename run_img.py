@@ -33,7 +33,7 @@ if opt.phase == 'train':
     # noise_source = create_data_sources('NoiseCollection001', opt)['train']
     # d.set_addtional_source(noise_source)
     model = create_model(opt)
-    model.train(d, verbose=1, max_steps=200000)
+    model.train(d, verbose=1, max_steps=2)
 
 if opt.phase == 'test':
     model = create_model(opt)
